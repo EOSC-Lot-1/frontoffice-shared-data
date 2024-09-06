@@ -1,0 +1,53 @@
+<footer class="ecl-site-footer footer">
+  <div class="ecl-container ecl-site-footer__container">
+    <div class="ecl-site-footer__row">
+      <div class="ecl-site-footer__column">
+        <div class="ecl-site-footer__section ecl-site-footer__section--site-info">
+          <h2 class="ecl-site-footer__title"><a href="{{ url('<front>') }}" class="ecl-link ecl-link--standalone ecl-site-footer__title-link">{{ site_name }}</a></h2>
+          <div class="ecl-site-footer__description">This site is managed by the Directorate-General for Communications
+            Networks, Content and Technology</div>
+          <ul class="ecl-site-footer__list">
+            <li class="ecl-site-footer__list-item">
+              <a href="/accessibility-statement" class="ecl-link ecl-link--standalone ecl-link--inverted ecl-site-footer__link">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ecl-site-footer__column">
+        <div class="ecl-site-footer__section contact-us">
+          <h2 class="ecl-site-footer__title ecl-site-footer__title--separator">{{ 'Contact us'|t }}</h2>
+          {{ drupal_menu('footer-contact') }}
+        </div>
+        <div class="ecl-site-footer__section policies">
+          <h2 class="ecl-site-footer__title ecl-site-footer__title--separator">{{ 'Policy statement'|t }}</h2>
+          {{ drupal_menu('footer-useful-information') }}
+        </div>
+      </div>
+      <div class="ecl-site-footer__column">
+        <div class="ecl-site-footer__section about-us">
+          <h2 class="ecl-site-footer__title ecl-site-footer__title--separator">{{ 'About us'|t }}</h2>
+          <div class="ecl-site-footer__list"><div class="ecl-site-footer__description">{{ drupal_block('block_content:4790b480-86ab-4670-aa86-6cf1142b826d') }}</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ecl-site-footer__row last-row">
+      <div class="ecl-site-footer__column">
+        <div class="ecl-site-footer__section"><a href="https://commission.europa.eu/index_en" class="ecl-link ecl-link--standalone ecl-site-footer__logo-link" aria-label="European Commission">
+            <picture class="ecl-picture ecl-site-footer__picture" title="European Commission">
+              <source srcset="/themes/custom/netcompany/images/logo-ec--en.4369895b.svg" media="(min-width: 996px)"><img class="ecl-site-footer__logo-image" src="/themes/custom/netcompany/images/logo-ec--en.4369895b.svg" alt="European Commission logo" />
+            </picture>
+          </a></div>
+      </div>
+      <div class="ecl-site-footer__column">
+        <div class="ecl-site-footer__section">
+          {{ drupal_menu('footer-other') }}
+        </div>
+      </div>
+      <div class="ecl-site-footer__column">
+        <div class="ecl-site-footer__section">
+          {{ drupal_menu('footer-policies') }}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
